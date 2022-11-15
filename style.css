@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -18,7 +19,7 @@ nav {
     color: darkred;
 }
 
-#experise-section {
+#expertise-section {
     color: fuchsia;
 }
 
