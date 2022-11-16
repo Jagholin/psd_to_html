@@ -36,7 +36,38 @@ nav {
 /* Prefix all CSS rules with #watch-section ! */
 
 #watch-section {
-    color: darkred;
+    width: 100%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#watch-section .grid-centered {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 550px;
+    background-color: blueviolet;
+    background-image: url("/images/bgk-middle.png");
+    background-size: cover;
+}
+
+#watch-section .watch-container {
+    --width: 300px;
+    --height: 400px;
+    --background: green;
+}
+
+#watch-section .play-button {
+    background-image: url("/images/png/play.png");
+    width: 103px;
+    aspect-ratio: 1;
+    margin-inline: auto;
+}
+
+#watch-section p {
+    text-transform: uppercase;
+    margin-top: 1em;
 }
 
 /* Expertise section ========================== */
