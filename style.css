@@ -53,6 +53,10 @@ nav {
     color: yellowgreen;
 }
 
+.middle-text {
+    text-align: center;
+}
+
 /* Contact client section ========================== */
 /* Prefix all CSS rules with #contact_client-section ! */
 
