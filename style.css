@@ -1,7 +1,20 @@
+/* Don't change anything here! */
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
+
+/* for every direct child of header and main */
+:is(header, main) > *,
+/* and footer */
+footer {
+    outline: 1px solid red;
+    width: 960px;
+}
+
+/* Nav and hero select section ========================== */
+/* Prefix all CSS rules with nav or #hero-section ! */
 
 nav {
     color: red;
@@ -11,26 +24,45 @@ nav {
     color:blue;
 }
 
+/* Our story section ========================== */
+/* Prefix all CSS rules with #our_story-section ! */
+
 #our_story-section {
     color:green;
 }
+
+/* Watch section ========================== */
+/* Prefix all CSS rules with #watch-section ! */
 
 #watch-section {
     color: darkred;
 }
 
+/* Expertise section ========================== */
+/* Prefix all CSS rules with #expertise-section ! */
+
 #expertise-section {
     color: fuchsia;
 }
+
+/* Team section ========================== */
+/* Prefix all CSS rules with #team-section ! */
 
 #team-section {
     color: yellowgreen;
 }
 
+/* Contact client section ========================== */
+/* Prefix all CSS rules with #contact_client-section ! */
+
 #contact_client-section {
     color: lightsalmon;
 }
 
+/* footer ========================== */
+/* Prefix all CSS rules with footer ! */
+
 footer {
     color: blueviolet;
 }
+
