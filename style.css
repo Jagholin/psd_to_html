@@ -52,12 +52,6 @@ nav {
     background-size: cover;
 }
 
-#watch-section .watch-container {
-    --width: 300px;
-    --height: 400px;
-    --background: green;
-}
-
 #watch-section .play-button {
     background-image: url("/images/png/play.png");
     width: 103px;
