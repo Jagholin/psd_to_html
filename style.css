@@ -72,13 +72,17 @@ nav {
 
 #expertise-section .cards-container {
     display: grid;
-    grid-template-areas: "item1 item2 item3"
-        "sep sep sep"
-        "item4 item5 item6";
-    grid-template-rows: auto 4px auto;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
     margin-top: 2em;
+    padding: 1em;
+}
+
+#expertise-section .cards-container > :is(:nth-child(2), :nth-child(3), :first-child) {
+    border-bottom: 1px solid lightgray;
+}
+
+#expertise-section .cards-container > :is(:nth-child(3n+1), :nth-child(3n+2)) {
+    border-right: 1px solid lightgray;
 }
 
 #expertise-section .card {
@@ -139,12 +143,6 @@ nav {
 
 #expertise-section .card p {
     margin-top: 1em;
-}
-
-#expertise-section .sep {
-    grid-area: sep;
-    height: 2px;
-    border-top: 1px solid #e0e0e0;
 }
 
 /* Team section ========================== */
