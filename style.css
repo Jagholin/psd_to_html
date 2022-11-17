@@ -74,6 +74,12 @@ nav {
     border: 1px solid green;
     padding: 50px;
 }
+
+.middle-text {
+    text-align: center;
+}
+
+
 /* Contact client section ========================== */
 /* Prefix all CSS rules with #contact_client-section ! */
 
@@ -88,3 +94,4 @@ footer {
     color: blueviolet;
 }
 
+/*********
