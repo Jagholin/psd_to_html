@@ -43,7 +43,108 @@ nav {
 /* Prefix all CSS rules with #expertise-section ! */
 
 #expertise-section {
-    color: fuchsia;
+    display: flow-root;
+}
+
+#expertise-section .expertise-header {
+    min-height:50px;
+    --background: deepskyblue;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#expertise-section p {
+    color: grey;
+    margin-top: 1em;
+}
+
+#expertise-section .small-sep {
+    width: 50px;
+    height: 1px;
+    border-top: 1px solid grey;
+    margin-inline: auto;
+    margin-block: 1em;
+}
+
+#expertise-section h2 {
+    text-transform: uppercase;
+}
+
+#expertise-section .cards-container {
+    display: grid;
+    grid-template-areas: "item1 item2 item3"
+        "sep sep sep"
+        "item4 item5 item6";
+    grid-template-rows: auto 4px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+#expertise-section .card {
+    height:280px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#expertise-section .card * {
+    text-align: center;
+}
+
+#expertise-section .card .icon {
+    width: 50px;
+    aspect-ratio: 1;
+    margin-inline: auto;
+    margin-bottom: 1.5em;
+}
+
+#expertise-section .screen {
+    background-image: url("/images/png/screen.png");
+    background-repeat: no-repeat;
+}
+
+#expertise-section .pen {
+    background-image: url("/images/png/pen.png");
+    background-repeat: no-repeat;
+}
+
+#expertise-section .icon.mobile {
+    background-image: url("/images/png/mobile.png");
+    width: 28px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+#expertise-section .graph {
+    background-image: url("/images/png/graph.png");
+    background-repeat: no-repeat;
+}
+
+#expertise-section .gameboy {
+    background-image: url("/images/png/gameboy.png");
+    background-repeat: no-repeat;
+}
+
+#expertise-section .heart {
+    background-image: url("/images/png/heart.png");
+    background-repeat: no-repeat;
+}
+
+#expertise-section .card h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#expertise-section .card p {
+    margin-top: 1em;
+}
+
+#expertise-section .sep {
+    grid-area: sep;
+    height: 2px;
+    border-top: 1px solid #e0e0e0;
 }
 
 /* Team section ========================== */
