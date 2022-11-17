@@ -57,7 +57,11 @@ nav {
     text-align: center;
     color: white;
 }
-
+.white-box {
+    width:150px; 
+    height:180px;
+    background-color: white;
+}
 /* Contact client section ========================== */
 /* Prefix all CSS rules with #contact_client-section ! */
 
