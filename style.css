@@ -57,10 +57,22 @@ nav {
     text-align: center;
     color: white;
 }
-.white-box {
-    width:150px; 
-    height:180px;
+
+.white {
     background-color: white;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 300px 100px;
+    padding: 10px;
+    column-gap: 20px;
+    
+}
+
+.grid-item {
+    border: 1px solid green;
+    padding: 50px;
 }
 /* Contact client section ========================== */
 /* Prefix all CSS rules with #contact_client-section ! */
