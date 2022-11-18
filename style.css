@@ -44,6 +44,7 @@ nav {
 
 #expertise-section {
     display: flow-root;
+    overflow: hidden;
 }
 
 #expertise-section .expertise-header {
@@ -86,10 +87,11 @@ nav {
 }
 
 #expertise-section .card {
-    height:280px;
+    min-height:280px;
     display: grid;
     justify-content: center;
     align-content: center;
+    overflow: hidden;
 }
 
 #expertise-section .card * {
