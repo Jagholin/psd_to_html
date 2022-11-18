@@ -17,13 +17,58 @@ footer {
 /* Nav and hero select section ========================== */
 /* Prefix all CSS rules with nav or #hero-section ! */
 
-nav {
-    color: red;
+header {
+    background-image: url("images/bgk-header.png");
+    height: 38rem;
+    object-fit: cover;
 }
 
-#hero-section {
-    color:blue;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
 }
+nav .site-logo {
+}
+
+nav .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    font-family: sun-serif;
+  }
+
+.navigation p {
+padding: 10px;
+}
+
+.hero-section {
+    height: 32rem;
+    font-family: sun-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+ }
+
+ .hero-section h2 {
+    color:white;
+    
+ }
+ .hero-section p {
+    color: black;
+    width: 50%;
+
+
+ }
+
+ 
+    
 
 /* Our story section ========================== */
 /* Prefix all CSS rules with #our_story-section ! */
