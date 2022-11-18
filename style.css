@@ -27,18 +27,25 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 12px;
+}
     
-
-}
 nav .site-logo {
+    color: darkturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 26px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
 
 nav .navigation {
     display: flex;
     justify-content: space-evenly;
     color: white;
     padding: 20px;
-    font-size: 14px;
+   
     font-family: sun-serif;
   }
 
@@ -58,16 +65,22 @@ padding: 10px;
 
  .hero-section h2 {
     color:white;
-    
+    padding: 20px;
  }
+
  .hero-section p {
-    color: black;
+    color: whitesmoke;
     width: 50%;
-
-
+    padding: 50px;
+    text-align: center;
+    font-size: 15;
  }
 
- 
+ .hero-section p2 {
+    color: DarkTurquoise;
+    border-color: blue;
+    border-width: .25em;
+ }
     
 
 /* Our story section ========================== */
