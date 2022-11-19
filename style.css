@@ -53,7 +53,7 @@ nav {
     color: yellowgreen;
 }
 
-.team-text {
+#team-section .team-text {
     text-align: center;
     color: white;
 }
@@ -79,6 +79,10 @@ nav {
     text-align: center;
 }
 
+.footer-grid {
+display: grid; 
+grid-template-columns: auto auto auto;
+} 
 
 /* Contact client section ========================== */
 /* Prefix all CSS rules with #contact_client-section ! */
