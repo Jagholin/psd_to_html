@@ -81,8 +81,12 @@ nav {
 
 .footer-grid {
 display: grid; 
-grid-template-columns: auto auto auto;
+grid-template-columns: 1fr 1fr 1fr;
 } 
+
+.white-text {
+    color: white;
+}
 
 /* Contact client section ========================== */
 /* Prefix all CSS rules with #contact_client-section ! */
