@@ -58,10 +58,11 @@ nav {
     color: white;
 }
 
-.white {
+#team-section .white {
     background-color: white;
 }
-.grid-container {
+
+#team-section .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 300px 100px;
@@ -70,21 +71,21 @@ nav {
     
 }
 
-.grid-item {
+:is(footer, #team-section) .grid-item {
     border: 1px solid green;
     padding: 50px;
 }
 
-.middle-text {
+#team-section .middle-text {
     text-align: center;
 }
 
-.footer-grid {
-display: grid; 
-grid-template-columns: 1fr 1fr 1fr;
+footer .footer-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
 } 
 
-.white-text {
+footer .white-text {
     color: white;
 }
 
