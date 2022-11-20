@@ -75,15 +75,39 @@ nav {
 }
 
 #contact_client-section .box-1 {
-
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 #contact_client-section .box-2 {
     display: flex;
+    flex-direction: column;
+    max-height: 470px;
+}
+
+#contact_client-section .box-2 h3{
+    display: flex;
     justify-content: flex-start;
 }
+
+#contact_client-section 
+
+/* #contact_client-section .box-2 div {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    flex-wrap: wrap;
+} */
+
+/* #contact_client-section .logo-box1, .logo-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+
+
+
 
 /* footer ========================== */
 /* Prefix all CSS rules with footer ! */
