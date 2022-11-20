@@ -37,21 +37,31 @@ nav .site-logo {
     justify-content: space-evenly;
     font-size: 26px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    padding: 1em;
 }
-
+nav .logo {
+    color: darkturquoise;
+    padding: 10px;
+}
 
 nav .navigation {
     display: flex;
     justify-content: space-evenly;
-    color: white;
-    padding: 20px;
-   
     font-family: sun-serif;
+    font-size: 12px;
   }
 
-.navigation p {
+nav .navigation p {
 padding: 10px;
+color: white;
+font-weight: bolder;
 }
+
+nav .navigation p1 {
+    padding: 10px;
+    color: darkturquoise;
+    font-weight: bolder;
+    }
 
 .hero-section {
     height: 32rem;
@@ -66,6 +76,15 @@ padding: 10px;
  .hero-section h2 {
     color:white;
     padding: 20px;
+    font-weight: bolder;
+
+ }
+
+ .hero-section .line {
+  border-bottom: 2px solid;
+  display: block;
+  width: 50px;
+  color: darkturquoise;
  }
 
  .hero-section p {
@@ -73,7 +92,7 @@ padding: 10px;
     width: 50%;
     padding: 50px;
     text-align: center;
-    font-size: 15;
+    font-size: 13;
  }
 
  .hero-section p2 {
