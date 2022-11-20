@@ -70,24 +70,43 @@ nav {
 
 #contact_client-section .container-1 div{
     border: 1px #ccc solid;
-    padding: 10px;
-    width: 40%;
+
+    --padding: 10px;
+    --width: 40%;
 }
 
 #contact_client-section .box-1 {
     display: flex;
     justify-content: flex-start;
+    height: 540px;
+    flex: 1;
 }
 
 #contact_client-section .box-2 {
     display: flex;
     flex-direction: column;
-    max-height: 470px;
+    min-height: 540px;
+    --width: 100%;
+    flex: 1;
 }
 
 #contact_client-section .box-2 h3{
-    display: flex;
+    display: block;
     justify-content: flex-start;
+}
+
+#contact_client-section .container-images {
+    display: flex;
+    --width: 100%;
+    gap: 1em;
+}
+
+#contact_client-section .container-images > * {
+    display: flex;
+    flex-direction: column;
+    --gap: 1em;
+    height: 450px;
+    justify-content: space-between;
 }
 
 #contact_client-section 
