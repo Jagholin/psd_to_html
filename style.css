@@ -145,7 +145,108 @@ nav .navigation p1 {
 /* Prefix all CSS rules with #expertise-section ! */
 
 #expertise-section {
-    color: fuchsia;
+    display: flow-root;
+    overflow: hidden;
+}
+
+#expertise-section .expertise-header {
+    min-height:50px;
+    --background: deepskyblue;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#expertise-section p {
+    color: grey;
+    margin-top: 1em;
+}
+
+#expertise-section .small-sep {
+    width: 50px;
+    height: 1px;
+    border-top: 1px solid grey;
+    margin-inline: auto;
+    margin-block: 1em;
+}
+
+#expertise-section h2 {
+    text-transform: uppercase;
+}
+
+#expertise-section .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+#expertise-section .cards-container > :nth-child(3) ~ * {
+    border-top: 1px solid lightgray;
+}
+
+#expertise-section .cards-container > :is(:nth-child(3n+1), :nth-child(3n+2)) {
+    border-right: 1px solid lightgray;
+}
+
+#expertise-section .card {
+    min-height:280px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+#expertise-section .card * {
+    text-align: center;
+}
+
+#expertise-section .card .icon {
+    width: 50px;
+    aspect-ratio: 1;
+    margin-inline: auto;
+    margin-bottom: 1.5em;
+}
+
+#expertise-section .screen {
+    background-image: url("/images/png/screen.png");
+    background-repeat: no-repeat;
+}
+
+#expertise-section .pen {
+    background-image: url("/images/png/pen.png");
+    background-repeat: no-repeat;
+}
+
+#expertise-section .icon.mobile {
+    background-image: url("/images/png/mobile.png");
+    width: 28px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+#expertise-section .graph {
+    background-image: url("/images/png/graph.png");
+    background-repeat: no-repeat;
+}
+
+#expertise-section .gameboy {
+    background-image: url("/images/png/gameboy.png");
+    background-repeat: no-repeat;
+}
+
+#expertise-section .heart {
+    background-image: url("/images/png/heart.png");
+    background-repeat: no-repeat;
+}
+
+#expertise-section .card h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#expertise-section .card p {
+    margin-top: 1em;
 }
 
 /* Team section ========================== */
