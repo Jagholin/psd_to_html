@@ -1,387 +1,386 @@
 /* Don't change anything here! */
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* for every direct child of header and main */
 :is(header, main) > *,
 /* and footer */
 footer {
-    width: 960px;
-    margin-inline: auto;
+  width: 960px;
+  margin-inline: auto;
 }
 
 /* Nav and hero select section ========================== */
 /* Prefix all CSS rules with nav or #hero-section ! */
 
 header {
-    background-image: url("images/bgk-header.png");
-    height: 38rem;
-    object-fit: cover;
+  background-image: url("images/bgk-header.png");
+  height: 38rem;
+  object-fit: cover;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
 }
-    
+
 nav .site-logo {
-    color: darkturquoise;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 26px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 1em;
+  color: darkturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 26px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1em;
 }
 nav .logo {
-    color: darkturquoise;
-    padding: 10px;
+  color: darkturquoise;
+  padding: 10px;
 }
 
 nav .navigation {
-    display: flex;
-    justify-content: space-evenly;
-    font-family: sun-serif;
-    font-size: 12px;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  font-family: sun-serif;
+  font-size: 12px;
+}
 
 nav .navigation p {
-padding: 10px;
-color: white;
-font-weight: bolder;
+  padding: 10px;
+  color: white;
+  font-weight: bolder;
 }
 
 nav .navigation p1 {
-    padding: 10px;
-    color: darkturquoise;
-    font-weight: bolder;
-    }
+  padding: 10px;
+  color: darkturquoise;
+  font-weight: bolder;
+}
 
 .hero-section {
-    height: 32rem;
-    font-family: sun-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  height: 32rem;
+  font-family: sun-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
- }
+.hero-section h2 {
+  color: white;
+  padding: 20px;
+  font-weight: bolder;
+}
 
- .hero-section h2 {
-    color:white;
-    padding: 20px;
-    font-weight: bolder;
-
- }
-
- .hero-section .line {
+.hero-section .line {
   border-bottom: 2px solid;
   display: block;
   width: 50px;
   color: darkturquoise;
- }
+}
 
- .hero-section p {
-    color: whitesmoke;
-    width: 50%;
-    padding: 50px;
-    text-align: center;
-    font-size: 13;
- }
+.hero-section p {
+  color: whitesmoke;
+  width: 50%;
+  padding: 50px;
+  text-align: center;
+  font-size: 13;
+}
 
- .hero-section p2 {
-    color: DarkTurquoise;
-    border-color: blue;
-    border-width: .25em;
- }
-    
+.hero-section p2 {
+  color: DarkTurquoise;
+  border-color: blue;
+  border-width: 0.25em;
+}
 
 /* Our story section ========================== */
 /* Prefix all CSS rules with #our_story-section ! */
 
 #our_story-section {
-    color:green;
+  color: green;
 }
 
 /* Watch section ========================== */
 /* Prefix all CSS rules with #watch-section ! */
 
 #watch-section {
-    width: 100%;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+  width: 100%;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
 #watch-section .grid-centered {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    min-height: 550px;
-    background-color: blueviolet;
-    background-image: url("/images/bgk-middle.png");
-    background-size: cover;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  min-height: 550px;
+  background-color: blueviolet;
+  background-image: url("/images/bgk-middle.png");
+  background-size: cover;
 }
 
 #watch-section .play-button {
-    background-image: url("/images/png/play.png");
-    width: 103px;
-    aspect-ratio: 1;
-    margin-inline: auto;
+  background-image: url("/images/png/play.png");
+  width: 103px;
+  aspect-ratio: 1;
+  margin-inline: auto;
 }
 
 #watch-section p {
-    text-transform: uppercase;
-    margin-top: 1em;
+  text-transform: uppercase;
+  margin-top: 1em;
 }
 
 /* Expertise section ========================== */
 /* Prefix all CSS rules with #expertise-section ! */
 
 #expertise-section {
-    display: flow-root;
-    overflow: hidden;
+  display: flow-root;
+  overflow: hidden;
 }
 
 #expertise-section .expertise-header {
-    min-height:50px;
-    --background: deepskyblue;
-    text-align: center;
-    margin-top: 70px;
+  min-height: 50px;
+  --background: deepskyblue;
+  text-align: center;
+  margin-top: 70px;
 }
 
 #expertise-section p {
-    color: grey;
-    margin-top: 1em;
+  color: grey;
+  margin-top: 1em;
 }
 
 #expertise-section .small-sep {
-    width: 50px;
-    height: 1px;
-    border-top: 1px solid grey;
-    margin-inline: auto;
-    margin-block: 1em;
+  width: 50px;
+  height: 1px;
+  border-top: 1px solid grey;
+  margin-inline: auto;
+  margin-block: 1em;
 }
 
 #expertise-section h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 #expertise-section .cards-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 2em;
-    padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2em;
+  padding: 1em;
 }
 
 #expertise-section .cards-container > :nth-child(3) ~ * {
-    border-top: 1px solid lightgray;
+  border-top: 1px solid lightgray;
 }
 
-#expertise-section .cards-container > :is(:nth-child(3n+1), :nth-child(3n+2)) {
-    border-right: 1px solid lightgray;
+#expertise-section
+  .cards-container
+  > :is(:nth-child(3n + 1), :nth-child(3n + 2)) {
+  border-right: 1px solid lightgray;
 }
 
 #expertise-section .card {
-    min-height:280px;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    overflow: hidden;
+  min-height: 280px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
 }
 
 #expertise-section .card * {
-    text-align: center;
+  text-align: center;
 }
 
 #expertise-section .card .icon {
-    width: 50px;
-    aspect-ratio: 1;
-    margin-inline: auto;
-    margin-bottom: 1.5em;
+  width: 50px;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  margin-bottom: 1.5em;
 }
 
 #expertise-section .screen {
-    background-image: url("/images/png/screen.png");
-    background-repeat: no-repeat;
+  background-image: url("/images/png/screen.png");
+  background-repeat: no-repeat;
 }
 
 #expertise-section .pen {
-    background-image: url("/images/png/pen.png");
-    background-repeat: no-repeat;
+  background-image: url("/images/png/pen.png");
+  background-repeat: no-repeat;
 }
 
 #expertise-section .icon.mobile {
-    background-image: url("/images/png/mobile.png");
-    width: 28px;
-    height: 50px;
-    background-repeat: no-repeat;
+  background-image: url("/images/png/mobile.png");
+  width: 28px;
+  height: 50px;
+  background-repeat: no-repeat;
 }
 
 #expertise-section .graph {
-    background-image: url("/images/png/graph.png");
-    background-repeat: no-repeat;
+  background-image: url("/images/png/graph.png");
+  background-repeat: no-repeat;
 }
 
 #expertise-section .gameboy {
-    background-image: url("/images/png/gameboy.png");
-    background-repeat: no-repeat;
+  background-image: url("/images/png/gameboy.png");
+  background-repeat: no-repeat;
 }
 
 #expertise-section .heart {
-    background-image: url("/images/png/heart.png");
-    background-repeat: no-repeat;
+  background-image: url("/images/png/heart.png");
+  background-repeat: no-repeat;
 }
 
 #expertise-section .card h3 {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #expertise-section .card p {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 /* Team section ========================== */
 /* Prefix all CSS rules with #team-section ! */
 
 #team-section {
-    color: white;
+  color: white;
 }
 
 #team-section .team-text {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 #team-section .white {
-    background-color: white;
+  background-color: white;
 }
 
 #team-section .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 300px 100px;
-    padding: 10px;
-    column-gap: 20px;
-    
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 300px 100px;
+  padding: 10px;
+  column-gap: 20px;
 }
 
 :is(footer, #team-section) .grid-item {
-    border: 1px solid green;
-    padding: 50px;
+  border: 1px solid green;
+  padding: 50px;
 }
 
 #team-section .middle-text {
-    text-align: center;
+  text-align: center;
 }
 
 footer .footer-grid {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-} 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 footer .white-text {
-    color: white;
+  color: white;
 }
 
 /* Contact client section ========================== */
 /* Prefix all CSS rules with #contact_client-section ! */
 
 #contact_client-section {
-    color: rgb(55, 52, 52);
+  color: rgb(55, 52, 52);
 }
 
 #contact_client-section .container-1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
 }
 
 ::placeholder {
   color: rgba(128, 128, 128, 0.512);
-  opacity: 1; 
+  opacity: 1;
 }
 
 #contact_client-section .form-info {
-    width: 420px;
-    height: 35px;
-    border-width: 0.7px;
-    border-color: rgba(128, 128, 128, 0.512);
-    padding: 15px;
+  width: 420px;
+  height: 35px;
+  border-width: 0.7px;
+  border-color: rgba(128, 128, 128, 0.512);
+  padding: 15px;
 }
 
 #contact_client-section textarea {
-    width: 420px;
-    height: 200px;
-    border-width: 0.7px;
-    border-color: rgba(128, 128, 128, 0.512);
-    padding: 15px;
+  width: 420px;
+  height: 200px;
+  border-width: 0.7px;
+  border-color: rgba(128, 128, 128, 0.512);
+  padding: 15px;
 }
 
 #contact_client-section .submit-button {
-   border-color: rgba(18, 218, 178, 0.784);
-   border-width: 1.2px;
-   border-radius: 2px;
-   border-style: solid;
-   background-color: white;
-   color: rgb(18, 218, 178);
-   width: 117px;
-   height: 39px;
-   text-transform: uppercase;
-   font-weight: bold;
+  border-color: rgba(18, 218, 178, 0.784);
+  border-width: 1.2px;
+  border-radius: 2px;
+  border-style: solid;
+  background-color: white;
+  color: rgb(18, 218, 178);
+  width: 117px;
+  height: 39px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #contact_client-section .box-1 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 540px;
-    flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 540px;
+  flex: 1;
 }
 
-#contact_client-section .box-1 h3{
-    padding:1em 0em;
+#contact_client-section .box-1 h3 {
+  padding: 1em 0em;
 }
 
 #contact_client-section .box-2 {
-    display: flex;
-    flex-direction: column;
-    min-height: 540px;
-    width: 380px;
-    flex: 1;
-    padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  min-height: 540px;
+  width: 380px;
+  flex: 1;
+  padding-left: 2em;
 }
 
-#contact_client-section .box-2 h3{
-    padding: 1em;
+#contact_client-section .box-2 h3 {
+  padding: 1em;
 }
 
 #contact_client-section .container-images {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 }
 
 #contact_client-section .container-images > * {
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: space-between;
 }
 
-#contact_client-section .logo-box1, .logo-box2 {
-    display: flex;
-    align-items: center;
-    margin: 1em;
-    width: 160px;
+#contact_client-section .logo-box1,
+.logo-box2 {
+  display: flex;
+  align-items: center;
+  margin: 1em;
+  width: 160px;
 }
 
 /* footer ========================== */
@@ -389,5 +388,3 @@ footer .white-text {
 
 footer {
 }
-
-/*********
