@@ -9,7 +9,6 @@
 :is(header, main) > *,
 /* and footer */
 footer {
-    outline: 1px solid red;
     width: 960px;
     margin-inline: auto;
 }
@@ -36,7 +35,7 @@ nav .site-logo {
     align-items: center;
     justify-content: space-evenly;
     font-size: 26px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 1em;
 }
 nav .logo {
@@ -253,7 +252,7 @@ nav .navigation p1 {
 /* Prefix all CSS rules with #team-section ! */
 
 #team-section {
-    color: yellowgreen;
+    color: white;
 }
 
 #team-section .team-text {
@@ -389,7 +388,6 @@ footer .white-text {
 /* Prefix all CSS rules with footer ! */
 
 footer {
-    color: blueviolet;
 }
 
 /*********
