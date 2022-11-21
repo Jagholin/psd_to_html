@@ -17,13 +17,90 @@ footer {
 /* Nav and hero select section ========================== */
 /* Prefix all CSS rules with nav or #hero-section ! */
 
-nav {
-    color: red;
+header {
+    background-image: url("images/bgk-header.png");
+    height: 38rem;
+    object-fit: cover;
 }
 
-#hero-section {
-    color:blue;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
 }
+    
+nav .site-logo {
+    color: darkturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 26px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    padding: 1em;
+}
+nav .logo {
+    color: darkturquoise;
+    padding: 10px;
+}
+
+nav .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sun-serif;
+    font-size: 12px;
+  }
+
+nav .navigation p {
+padding: 10px;
+color: white;
+font-weight: bolder;
+}
+
+nav .navigation p1 {
+    padding: 10px;
+    color: darkturquoise;
+    font-weight: bolder;
+    }
+
+.hero-section {
+    height: 32rem;
+    font-family: sun-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+ }
+
+ .hero-section h2 {
+    color:white;
+    padding: 20px;
+    font-weight: bolder;
+
+ }
+
+ .hero-section .line {
+  border-bottom: 2px solid;
+  display: block;
+  width: 50px;
+  color: darkturquoise;
+ }
+
+ .hero-section p {
+    color: whitesmoke;
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+    font-size: 13;
+ }
+
+ .hero-section p2 {
+    color: DarkTurquoise;
+    border-color: blue;
+    border-width: .25em;
+ }
+    
 
 /* Our story section ========================== */
 /* Prefix all CSS rules with #our_story-section ! */
@@ -36,7 +113,32 @@ nav {
 /* Prefix all CSS rules with #watch-section ! */
 
 #watch-section {
-    color: darkred;
+    width: 100%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#watch-section .grid-centered {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 550px;
+    background-color: blueviolet;
+    background-image: url("/images/bgk-middle.png");
+    background-size: cover;
+}
+
+#watch-section .play-button {
+    background-image: url("/images/png/play.png");
+    width: 103px;
+    aspect-ratio: 1;
+    margin-inline: auto;
+}
+
+#watch-section p {
+    text-transform: uppercase;
+    margin-top: 1em;
 }
 
 /* Expertise section ========================== */
@@ -154,11 +256,133 @@ nav {
     color: yellowgreen;
 }
 
+#team-section .team-text {
+    text-align: center;
+    color: white;
+}
+
+#team-section .white {
+    background-color: white;
+}
+
+#team-section .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 300px 100px;
+    padding: 10px;
+    column-gap: 20px;
+    
+}
+
+:is(footer, #team-section) .grid-item {
+    border: 1px solid green;
+    padding: 50px;
+}
+
+#team-section .middle-text {
+    text-align: center;
+}
+
+footer .footer-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+} 
+
+footer .white-text {
+    color: white;
+}
+
 /* Contact client section ========================== */
 /* Prefix all CSS rules with #contact_client-section ! */
 
 #contact_client-section {
-    color: lightsalmon;
+    color: rgb(55, 52, 52);
+}
+
+#contact_client-section .container-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+::placeholder {
+  color: rgba(128, 128, 128, 0.512);
+  opacity: 1; 
+}
+
+#contact_client-section .form-info {
+    width: 420px;
+    height: 35px;
+    border-width: 0.7px;
+    border-color: rgba(128, 128, 128, 0.512);
+    padding: 15px;
+}
+
+#contact_client-section textarea {
+    width: 420px;
+    height: 200px;
+    border-width: 0.7px;
+    border-color: rgba(128, 128, 128, 0.512);
+    padding: 15px;
+}
+
+#contact_client-section .submit-button {
+   border-color: rgba(18, 218, 178, 0.784);
+   border-width: 1.2px;
+   border-radius: 2px;
+   border-style: solid;
+   background-color: white;
+   color: rgb(18, 218, 178);
+   width: 117px;
+   height: 39px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+#contact_client-section .box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 540px;
+    flex: 1;
+}
+
+#contact_client-section .box-1 h3{
+    padding:1em 0em;
+}
+
+#contact_client-section .box-2 {
+    display: flex;
+    flex-direction: column;
+    min-height: 540px;
+    width: 380px;
+    flex: 1;
+    padding-left: 2em;
+}
+
+#contact_client-section .box-2 h3{
+    padding: 1em;
+}
+
+#contact_client-section .container-images {
+    display: flex;
+    gap: 1em;
+}
+
+#contact_client-section .container-images > * {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: space-between;
+}
+
+#contact_client-section .logo-box1, .logo-box2 {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    width: 160px;
 }
 
 /* footer ========================== */
@@ -168,3 +392,4 @@ footer {
     color: blueviolet;
 }
 
+/*********
